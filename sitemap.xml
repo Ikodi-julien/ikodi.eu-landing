@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+   <url>
+
+      <loc>https://ikodi.eu/</loc>
+
+      <lastmod>2020-12-08</lastmod>
+
+      <changefreq>monthly</changefreq>
+
+      <priority>0.5</priority>
+
+   </url>
+
+   <url>
+
+      <loc>https://ikodi.eu/ikodi_wp/</loc>
+
+      <lastmod>2020-11-25</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.4</priority>
+
+   </url>
+
+   <url>
+
+      <loc>https://ikodi.eu/blog/</loc>
+
+      <lastmod>2020-11-24</lastmod>
+
+      <changefreq>weekly</changefreq>
+
+      <priority>0.5</priority>
+
+   </url>
+
+   <url>
+
+      <loc>https://ikodi.eu/multiplicorne/</loc>
+
+      <lastmod>2020-10-23</lastmod>
+
+      <changefreq>monthly</changefreq>
+
+      <priority>0.9</priority>
+
+   </url>
+
+   <url>
+
+      <loc>https://ikodi.eu/games/</loc>
+
+      <lastmod>2020-12-8</lastmod>
+
+      <changefreq>monthly</changefreq>
+
+      <priority>0.9</priority>
+
+   </url>
+
+</urlset>

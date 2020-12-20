@@ -1,0 +1,104 @@
+/* --- SASS --- */
+/* --- KEYFRAMES --- */
+@keyframes bars {
+  0% {
+    transform: scaleY(0.5);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+/* ---STYLE --- */
+.loader {
+  position: absolute;
+  height: 2000px;
+  width: 100vw;
+  background-color: white;
+  z-index: var(--z-loader);
+}
+.loader .container {
+  position: relative;
+  margin-top: 100px;
+}
+.loader .load {
+  width: 30vh;
+  height: 22.5vh;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+.loader .load__bar {
+  background-color: #15dea5;
+  height: 100%;
+  width: 3vh;
+  animation: bars 1s backwards infinite ease-in-out alternate;
+  animation-direction: alternate;
+}
+.loader .load__bar--1 {
+  animation-delay: 0.2s;
+}
+.loader .load__bar--1-inv {
+  animation-delay: 0.785s;
+  animation-direction: alternate-reverse;
+  background-color: #0e397f;
+}
+.loader .load__bar--1-inv:hover {
+  animation-play-state: paused;
+}
+.loader .load__bar--2 {
+  animation-delay: 0.4s;
+}
+.loader .load__bar--2-inv {
+  animation-delay: 1.12s;
+  animation-direction: alternate-reverse;
+  background-color: #0e397f;
+}
+.loader .load__bar--2-inv:hover {
+  animation-play-state: paused;
+}
+.loader .load__bar--3 {
+  animation-delay: 0.6s;
+}
+.loader .load__bar--3-inv {
+  animation-delay: 1.14s;
+  animation-direction: alternate-reverse;
+  background-color: #0e397f;
+}
+.loader .load__bar--3-inv:hover {
+  animation-play-state: paused;
+}
+.loader .load__bar--4 {
+  animation-delay: 0.8s;
+}
+.loader .load__bar--4-inv {
+  animation-delay: 1.265s;
+  animation-direction: alternate-reverse;
+  background-color: #0e397f;
+}
+.loader .load__bar--4-inv:hover {
+  animation-play-state: paused;
+}
+.loader .load__bar--5 {
+  animation-delay: 1s;
+}
+.loader .load__bar--5-inv {
+  animation-delay: 1.975s;
+  animation-direction: alternate-reverse;
+  background-color: #0e397f;
+}
+.loader .load__bar--5-inv:hover {
+  animation-play-state: paused;
+}
+
+.loaderInfo {
+  position: fixed;
+  padding: 15px;
+  top: 450px;
+  left: 30%;
+  color: #181818;
+  margin: 50px;
+}
+
+.hide {
+  top: -100vh;
+}
