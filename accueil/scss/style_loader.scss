@@ -1,10 +1,10 @@
 /* --- SASS --- */
 
-$cd-bars: #15dea5;
-$cd-bars-inv: #0e397f;
-$size: 3vh;
+$cd-bars: #4b15de;
+$cd-bars-inv: #0e727f;
+$size: 5vw;
 $duration: 1s;
-$num-bars: 5;
+$num-bars: 20;
 $delay: $duration / $num-bars;
 
 /* --- KEYFRAMES --- */
@@ -28,14 +28,15 @@ $delay: $duration / $num-bars;
   background-color: white;
   z-index: var(--z-loader);
 
-  & .container {
+  &__container {
     position: relative;
     margin-top: 100px;
+    width: 80%;
   }
 
   & .load {
-    width: $size * 10;
-    height: $size * 7.5;
+    width: $size * 7;
+    height: $size * 5;
     margin: auto;
     display: flex;
     justify-content: space-evenly;
@@ -43,7 +44,7 @@ $delay: $duration / $num-bars;
     &__bar {
       background-color: #15dea5;
       height: 100%;
-      width: $size;
+      width: $size * 0.1;
       //animation-name duration animation-fill-mode animation-iteration-count animation-timing-function animation-direction
       animation: bars $duration backwards infinite ease-in-out alternate;
       animation-direction: alternate;
@@ -54,7 +55,7 @@ $delay: $duration / $num-bars;
         }
 
         &--#{$i}-inv {
-          animation-delay: $delay * $i + random(100) * 15ms;
+          animation-delay: $delay * $i;
           animation-direction: alternate-reverse;
           background-color: $cd-bars-inv;
 
@@ -67,15 +68,6 @@ $delay: $duration / $num-bars;
   }
 }
 
-.loaderInfo {
-  position: fixed;
-  padding: 15px;
-  top: 450px;
-  left: 30%;
-  color: rgb(24, 24, 24);
-  margin: 50px;
-}
-
 .hide {
-  top: -100vh;
+  top: -2000px;
 }
