@@ -323,10 +323,14 @@ a {
   width: 100%;
   background: linear-gradient(rgba(190, 190, 190, 0.2), rgba(190, 190, 190, 0));
   box-shadow: inset 0 0 20px 4px rgba(190, 190, 190, 0.3);
+  z-index: 10;
 }
 .nav__logo {
   display: flex;
   align-items: center;
+}
+.nav__logo__name {
+  margin-left: 10px;
 }
 .nav img {
   width: 70px;
@@ -343,7 +347,6 @@ a {
   right: -500px;
   padding-top: 60px;
   transition: right 300ms;
-  z-index: 2;
   font-size: 25px;
   line-height: 48px;
   text-align: center;
@@ -396,7 +399,7 @@ a {
   width: 45px;
   height: 45px;
   cursor: pointer;
-  z-index: 3;
+  z-index: 11 !important;
   border-radius: 10px;
   box-shadow: 6px 6px 10px 0 rgba(40, 40, 40, 0.3), -6px -6px 10px 0 rgba(255, 255, 255, 0.3);
   background-color: var(--turquoise);
@@ -492,8 +495,24 @@ a {
 .portefolio__card__img {
   width: 50%;
 }
-.portefolio__card__img img {
+.portefolio__card__img img,
+.portefolio__card__img iframe {
   width: 100%;
+}
+@media screen and (min-width: 450px) {
+  .portefolio__card__img iframe {
+    height: 250px;
+  }
+}
+@media screen and (min-width: 700px) {
+  .portefolio__card__img iframe {
+    height: 400px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portefolio__card__img iframe {
+    height: 600px;
+  }
 }
 @media screen and (max-width: 450px) {
   .portefolio__card__img {
@@ -667,6 +686,7 @@ a {
 .portefolio__pixelArt__display {
   position: relative;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 50px;
@@ -682,6 +702,7 @@ a {
   }
 }
 .portefolio__pixelArt__display__caneva {
+  position: relative;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -705,29 +726,17 @@ a {
   background-color: greenyellow;
 }
 .portefolio__pixelArt__display .colorBox {
-  position: absolute;
   padding: 10px;
   margin: 10px;
-  top: 0;
-  right: 0;
-  width: 12vw;
+  width: 50%;
   background-color: rgba(72, 69, 163, 0.3);
   display: flex;
   justify-content: space-between;
+  z-index: 1;
 }
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 800px) {
   .portefolio__pixelArt__display .colorBox {
-    top: -30px;
-    width: 30vw;
-    top: 280px;
-    right: 30%;
-  }
-}
-@media screen and (max-width: 450px) {
-  .portefolio__pixelArt__display .colorBox {
-    width: 50vw;
-    top: 220px;
-    right: 37px;
+    width: 30%;
   }
 }
 .portefolio__pixelArt__display .colorBouton__1 {

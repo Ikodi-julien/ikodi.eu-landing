@@ -69,10 +69,15 @@ a {
   width: 100%;
   background: linear-gradient(rgba(190, 190, 190, 0.2), rgba(190, 190, 190, 0));
   box-shadow: inset 0 0 20px 4px rgba(190, 190, 190, 0.3);
+  z-index: 10;
 
   &__logo {
     display: flex;
     align-items: center;
+
+    &__name {
+      margin-left: 10px;
+    }
   }
 
   & img {
@@ -91,7 +96,6 @@ a {
     right: -500px;
     padding-top: $header-height;
     transition: right 300ms;
-    z-index: 2;
     font-size: 25px;
     line-height: 48px;
     text-align: center;
@@ -159,7 +163,7 @@ a {
     width: $header-height - 15px;
     height: $header-height - 15px;
     cursor: pointer;
-    z-index: 3;
+    z-index: 11 !important;
     border-radius: $links-border-radius;
     box-shadow: 6px 6px 10px 0 rgba(40, 40, 40, 0.3),
       -6px -6px 10px 0 rgba(255, 255, 255, 0.3);
@@ -266,8 +270,23 @@ a {
     &__img {
       width: 50%;
 
-      & img {
+      & img,
+      iframe {
         width: 100%;
+      }
+
+      & iframe {
+        @media screen and (min-width: 450px) {
+          height: 250px;
+        }
+
+        @media screen and (min-width: 700px) {
+          height: 400px;
+        }
+
+        @media screen and (min-width: 1200px) {
+          height: 600px;
+        }
       }
 
       @media screen and (max-width: 450px) {
@@ -447,6 +466,7 @@ a {
     &__display {
       position: relative;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       padding: 50px;
@@ -460,6 +480,7 @@ a {
       }
 
       &__caneva {
+        position: relative;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -489,27 +510,16 @@ a {
       }
 
       & .colorBox {
-        position: absolute;
         padding: 10px;
         margin: 10px;
-        top: 0;
-        right: 0;
-        width: 12vw;
+        width: 50%;
         background-color: rgba(72, 69, 163, 0.3);
         display: flex;
         justify-content: space-between;
+        z-index: 1;
 
-        @media screen and (max-width: 800px) {
-          top: -30px;
-          width: 30vw;
-          top: 280px;
-          right: 30%;
-        }
-
-        @media screen and (max-width: 450px) {
-          width: 50vw;
-          top: 220px;
-          right: 37px;
+        @media screen and (min-width: 800px) {
+          width: 30%;
         }
       }
 

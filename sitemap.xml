@@ -6,7 +6,7 @@
 
       <loc>https://ikodi.eu/</loc>
 
-      <lastmod>2021-01-07</lastmod>
+      <lastmod>2021-08-26</lastmod>
 
       <changefreq>monthly</changefreq>
 
@@ -16,19 +16,9 @@
 
    <url>
 
-      <loc>https://ikodi.eu/ikodi_wp/</loc>
+      <loc>https://blog.ikodi.eu/</loc>
 
-      <lastmod>2020-11-25</lastmod>
-      <changefreq>monthly</changefreq>
-      <priority>0.1</priority>
-
-   </url>
-
-   <url>
-
-      <loc>https://ikodi.eu/blog/</loc>
-
-      <lastmod>2021-01-03</lastmod>
+      <lastmod>2021-08-29</lastmod>
 
       <changefreq>weekly</changefreq>
 
@@ -38,16 +28,15 @@
 
    <url>
 
-      <loc>https://ikodi.eu/multiplicorne/</loc>
+      <loc>https://multiplicorne.ikodi.eu/</loc>
 
-      <lastmod>2020-10-23</lastmod>
+      <lastmod>2021-08-29</lastmod>
 
       <changefreq>monthly</changefreq>
 
       <priority>0.6</priority>
 
    </url>
-
    <url>
 
       <loc>https://ikodi.eu/games/</loc>
@@ -56,7 +45,7 @@
 
       <changefreq>monthly</changefreq>
 
-      <priority>0.5</priority>
+      <priority>0.3</priority>
 
    </url>
    <url>
@@ -65,20 +54,31 @@
 
       <lastmod>2021-07-01</lastmod>
 
-      <changefreq>monthly</changefreq>
+      <changefreq>yearly</changefreq>
 
-      <priority>0.5</priority>
+      <priority>0.2</priority>
 
    </url>
-      <url>
+   <url>
 
       <loc>https://topics.ikodi.eu</loc>
 
       <lastmod>2021-07-01</lastmod>
 
+      <changefreq>yearly</changefreq>
+
+      <priority>0.1</priority>
+
+   </url>
+   <url>
+
+      <loc>https://chronofit.ikodi.eu</loc>
+
+      <lastmod>2021-08-25</lastmod>
+
       <changefreq>monthly</changefreq>
 
-      <priority>0.5</priority>
+      <priority>0.8</priority>
 
    </url>
 </urlset>

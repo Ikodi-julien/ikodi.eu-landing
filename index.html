@@ -11,7 +11,8 @@
   <link rel="stylesheet" href="accueil/css/styles.css" />
   <script type="module" src="accueil/scripts/main.js"></script>
   <title>IKODI</title>
-  <meta name="description" content="Le portfolio d'un développeur web débutant, Julien Pellin" />
+  <meta name="description"
+    content="Le portfolio d'un développeur web, Julien Pellin. Mais surtout des applis de sport avec Chronofit, de tchat avec Concord, de course de licornes avec multiplicornes, un blog et des jeux en javascritpt !O_o!" />
 </head>
 
 <body>
@@ -70,7 +71,7 @@
       <nav class="nav">
         <div class="nav__logo">
           <img src="./accueil/imgs/logo_ikodi_lettres.png" alt="Logo Ikodi" />
-          <h1 class="nav__logo__name"> - Julien Pellin</h1>
+          <h1 class="nav__logo__name">Julien Pellin</h1>
         </div>
         <div class="nav__hamburger" id="nav-hamburger">
           <div class="nav__hamburger__slice"></div>
@@ -80,7 +81,11 @@
           <ul class="nav__list">
 
             <li class="nav__link">
-              <a href="https://ikodi.eu/blog">Le Blog</a>
+              <a href="https://chronofit.ikodi.eu">ChronoFit</a>
+            </li>
+
+            <li class="nav__link">
+              <a href="https://ikodi.eu/multiplicorne">Multiplicorne</a>
             </li>
 
             <li class="nav__link">
@@ -88,7 +93,7 @@
             </li>
 
             <li class="nav__link">
-              <a href="https://topics.ikodi.eu">Topics</a>
+              <a href="https://ikodi.eu/blog">Le Blog</a>
             </li>
 
             <li class="nav__link">
@@ -96,11 +101,7 @@
             </li>
 
             <li class="nav__link">
-              <a href="https://ikodi.eu/chronoFit">ChronoFit</a>
-            </li>
-
-            <li class="nav__link">
-              <a href="https://ikodi.eu/multiplicorne">Multiplicorne</a>
+              <a href="https://topics.ikodi.eu">Topics</a>
             </li>
 
             <li class="nav__link">
@@ -110,6 +111,9 @@
             <li class="nav__link">
               <a href="https://ikodi.eu/blog/?page_id=36">Contact</a>
             </li>
+            <li class="nav__link">
+              <a href="./accueil/CV-DevWeb-Julien-PELLIN.pdf">Mon CV</a>
+            </li>
           </ul>
         </div>
       </nav>
@@ -117,10 +121,42 @@
 
     <section class="hero">
       <img src="./accueil/imgs/logo_ikodi_lettres.png" alt="logo ikodi" />
-      <h1>Portefolio</h1>
+      <h1>Portfolio</h1>
     </section>
 
     <section class="portefolio">
+      <!-- ---------- -->
+      <div class="portefolio__card">
+        <div class="portefolio__card__img">
+          <a href="https://chronofit.ikodi.eu">
+            <iframe src="https://www.youtube.com/embed/mnzY1pf2LO0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </a>
+        </div>
+
+        <div class="portefolio__card__infos">
+          <h2>Chronofit</h2>
+
+          <p>
+            Une app pour l'enchainement d'exercices chronométrés.
+            Tels que les WOD de CrossFit, les HIITS, Tabatha et autres circuit training.
+            <br>
+            Chronofit permet de créer un entrainement personnalisé ou de "lire" des entrainements déjà existant.
+            <br>
+            En plus, des fonctionnalités intéressantes avec les WOD "Girls", du drag & drop, de la synthèse vocale...
+          </p>
+            <p>
+              Front: React-Redux, scss<br>
+            Back: express<br>
+            Deploy: AWS EC2.
+          </p>
+              <button class="button">
+            <a href="https://chronofit.ikodi.eu">Chronofit</a>
+          </button>
+              <button class="button --repo">
+            <a href="https://github.com/Ikodi-julien?tab=repositories">Repo Github</a>
+          </button>
+        </div>
+      </div>
       <!-- ---------- -->
       <div class="portefolio__card">
         <div class="portefolio__card__img">
@@ -237,17 +273,17 @@
 
         <div class="portefolio__card__infos">
           <p>
-            De mon côté c’est le sport, mais marre du cahier à spirale pour
-            noter le programme, donc...<br>
-            De la POO, du PHP sans framework...
-          </p><br>
-
-            <em>PS: La version React (donc bien mieux) est à venir.</em>
+            La vieille version de chronofit, si jeune et déjà dépassée...
           </p>
-          <button class="button">
+          <p>
+            Front: html, scss,<br>
+            Back: PHP, POO sans framework.<br>
+            Deploy: Instance PHP chez Gandi.
+          </p>
+            <button class="button">
             <a href="https://ikodi.eu/chronoFit">ChronoFit</a>
           </button>
-          <button class="button --repo">
+            <button class="button --repo">
             <a href="https://github.com/Ikodi-julien/chronoFit">Repo Github</a>
           </button>
         </div>
@@ -267,8 +303,8 @@
         <div class="portefolio__card__infos">
           <h2>Les Games</h2>
           <p>
-            Un nouveau jeu tous les mois, plus ou moins. Jeux tout en JavaScript, scores et commentaires enregistrés en
-            POO PHP dans une base PostegreSQL. Depuis octobre 2020.
+            Jeux tout en JavaScript, scores et commentaires enregistrés en POO PHP dans une base PostegreSQL. Depuis
+            octobre 2020.
           </p>
           <button class="button">
             <a href="https://ikodi.eu/games">Aller voir</a>
@@ -286,7 +322,6 @@
           <h2>Pixel Art</h2>
 
           <p> Faites votre "invader" </p>
-          <p> <em>Projet O'clock en binôme (une journée de travail)</em> </p>
 
           <form class="portefolio__pixelArt__form" id="pixelArtForm"></form>
 
@@ -305,7 +340,7 @@
                 src="./accueil/imgs/logo_ikodi_lettres.png"
                 alt="logo du site ikodi"
             /></a>
-          <p>- 01/2021 -</p>
+          <p>- 08/2021 -</p>
         </div>
 
         <div class="links-row">
