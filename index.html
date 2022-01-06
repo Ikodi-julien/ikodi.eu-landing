@@ -1,352 +1,410 @@
 <!DOCTYPE html>
 <html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="accueil/css/styles.css" />
+    <script type="module" src="accueil/scripts/main.js"></script>
+    <title>IKODI</title>
+    <meta
+      name="description"
+      content="Le portfolio d'un développeur web, Julien Pellin. Mais surtout des applis de sport avec Chronofit, de tchat avec Concord, de course de licornes avec multiplicornes, un blog et des jeux en javascritpt !O_o!"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,400;1,700;1,900&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="accueil/css/styles.css" />
-  <script type="module" src="accueil/scripts/main.js"></script>
-  <title>IKODI</title>
-  <meta name="description"
-    content="Le portfolio d'un développeur web, Julien Pellin. Mais surtout des applis de sport avec Chronofit, de tchat avec Concord, de course de licornes avec multiplicornes, un blog et des jeux en javascritpt !O_o!" />
-</head>
+  <body>
+    <div class="loader" id="loader">
+      <div class="loader__container">
+        <div class="load">
+          <div class="load__bar load__bar--1"></div>
+          <div class="load__bar load__bar--2"></div>
+          <div class="load__bar load__bar--3"></div>
+          <div class="load__bar load__bar--4"></div>
+          <div class="load__bar load__bar--5"></div>
+          <div class="load__bar load__bar--6"></div>
+          <div class="load__bar load__bar--7"></div>
+          <div class="load__bar load__bar--8"></div>
+          <div class="load__bar load__bar--9"></div>
+          <div class="load__bar load__bar--10"></div>
+          <div class="load__bar load__bar--11"></div>
+          <div class="load__bar load__bar--12"></div>
+          <div class="load__bar load__bar--13"></div>
+          <div class="load__bar load__bar--14"></div>
+          <div class="load__bar load__bar--15"></div>
+          <div class="load__bar load__bar--16"></div>
+          <div class="load__bar load__bar--17"></div>
+          <div class="load__bar load__bar--18"></div>
+          <div class="load__bar load__bar--19"></div>
+          <div class="load__bar load__bar--20"></div>
+        </div>
 
-<body>
-  <div class="loader" id="loader">
-    <div class="loader__container">
-      <div class="load">
-        <div class="load__bar load__bar--1"></div>
-        <div class="load__bar load__bar--2"></div>
-        <div class="load__bar load__bar--3"></div>
-        <div class="load__bar load__bar--4"></div>
-        <div class="load__bar load__bar--5"></div>
-        <div class="load__bar load__bar--6"></div>
-        <div class="load__bar load__bar--7"></div>
-        <div class="load__bar load__bar--8"></div>
-        <div class="load__bar load__bar--9"></div>
-        <div class="load__bar load__bar--10"></div>
-        <div class="load__bar load__bar--11"></div>
-        <div class="load__bar load__bar--12"></div>
-        <div class="load__bar load__bar--13"></div>
-        <div class="load__bar load__bar--14"></div>
-        <div class="load__bar load__bar--15"></div>
-        <div class="load__bar load__bar--16"></div>
-        <div class="load__bar load__bar--17"></div>
-        <div class="load__bar load__bar--18"></div>
-        <div class="load__bar load__bar--19"></div>
-        <div class="load__bar load__bar--20"></div>
-      </div>
-
-      <div class="load">
-        <div class="load__bar load__bar--1-inv"></div>
-        <div class="load__bar load__bar--2-inv"></div>
-        <div class="load__bar load__bar--3-inv"></div>
-        <div class="load__bar load__bar--4-inv"></div>
-        <div class="load__bar load__bar--5-inv"></div>
-        <div class="load__bar load__bar--6-inv"></div>
-        <div class="load__bar load__bar--7-inv"></div>
-        <div class="load__bar load__bar--8-inv"></div>
-        <div class="load__bar load__bar--9-inv"></div>
-        <div class="load__bar load__bar--10-inv"></div>
-        <div class="load__bar load__bar--11-inv"></div>
-        <div class="load__bar load__bar--12-inv"></div>
-        <div class="load__bar load__bar--13-inv"></div>
-        <div class="load__bar load__bar--14-inv"></div>
-        <div class="load__bar load__bar--15-inv"></div>
-        <div class="load__bar load__bar--16-inv"></div>
-        <div class="load__bar load__bar--17-inv"></div>
-        <div class="load__bar load__bar--18-inv"></div>
-        <div class="load__bar load__bar--19-inv"></div>
-        <div class="load__bar load__bar--20-inv"></div>
+        <div class="load">
+          <div class="load__bar load__bar--1-inv"></div>
+          <div class="load__bar load__bar--2-inv"></div>
+          <div class="load__bar load__bar--3-inv"></div>
+          <div class="load__bar load__bar--4-inv"></div>
+          <div class="load__bar load__bar--5-inv"></div>
+          <div class="load__bar load__bar--6-inv"></div>
+          <div class="load__bar load__bar--7-inv"></div>
+          <div class="load__bar load__bar--8-inv"></div>
+          <div class="load__bar load__bar--9-inv"></div>
+          <div class="load__bar load__bar--10-inv"></div>
+          <div class="load__bar load__bar--11-inv"></div>
+          <div class="load__bar load__bar--12-inv"></div>
+          <div class="load__bar load__bar--13-inv"></div>
+          <div class="load__bar load__bar--14-inv"></div>
+          <div class="load__bar load__bar--15-inv"></div>
+          <div class="load__bar load__bar--16-inv"></div>
+          <div class="load__bar load__bar--17-inv"></div>
+          <div class="load__bar load__bar--18-inv"></div>
+          <div class="load__bar load__bar--19-inv"></div>
+          <div class="load__bar load__bar--20-inv"></div>
+        </div>
       </div>
     </div>
-  </div>
-  <!-- ### HEADER ### -->
-  <div class="container">
-    <header>
-      <nav class="nav">
-        <div class="nav__logo">
-          <img src="./accueil/imgs/logo_ikodi_lettres.png" alt="Logo Ikodi" />
-          <h1 class="nav__logo__name">Julien Pellin</h1>
-        </div>
-        <div class="nav__hamburger" id="nav-hamburger">
-          <div class="nav__hamburger__slice"></div>
-        </div>
+    <!-- ### HEADER ### -->
+    <div class="container">
+      <header>
+        <nav class="nav">
+          <div class="nav__logo">
+            <img src="./accueil/imgs/logo_ikodi_lettres.png" alt="Logo Ikodi" />
+            <h1 class="nav__logo__name">Julien Pellin</h1>
+          </div>
+          <div class="nav__hamburger" id="nav-hamburger">
+            <div class="nav__hamburger__slice"></div>
+          </div>
 
-        <div class="nav__menu" id="nav-menu">
-          <ul class="nav__list">
+          <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+              <li class="nav__link">
+                <a href="https://chronofit.ikodi.eu">ChronoFit</a>
+              </li>
 
-            <li class="nav__link">
-              <a href="https://chronofit.ikodi.eu">ChronoFit</a>
-            </li>
+              <li class="nav__link">
+                <a href="https://ikodi.eu/multiplicorne">Multiplicorne</a>
+              </li>
 
-            <li class="nav__link">
-              <a href="https://ikodi.eu/multiplicorne">Multiplicorne</a>
-            </li>
+              <li class="nav__link">
+                <a href="https://concord.ikodi.eu">Concord</a>
+              </li>
 
-            <li class="nav__link">
-              <a href="https://concord.ikodi.eu">Concord</a>
-            </li>
+              <li class="nav__link">
+                <a href="https://ikodi.eu/blog">Le Blog</a>
+              </li>
 
-            <li class="nav__link">
-              <a href="https://ikodi.eu/blog">Le Blog</a>
-            </li>
+              <li class="nav__link">
+                <a href="https://ikodi.eu/games">Games</a>
+              </li>
 
-            <li class="nav__link">
-              <a href="https://ikodi.eu/games">Games</a>
-            </li>
+              <li class="nav__link">
+                <a href="https://topics.ikodi.eu">Topics</a>
+              </li>
 
-            <li class="nav__link">
-              <a href="https://topics.ikodi.eu">Topics</a>
-            </li>
+              <li class="nav__link">
+                <a href="https://github.com/Ikodi-julien">Github</a>
+              </li>
 
-            <li class="nav__link">
-              <a href="https://github.com/Ikodi-julien">Github</a>
-            </li>
+              <li class="nav__link">
+                <a href="https://ikodi.eu/blog/?page_id=36">Contact</a>
+              </li>
+              <li class="nav__link">
+                <a href="./accueil/CV-DevWeb-Julien-PELLIN.pdf">Mon CV</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
 
-            <li class="nav__link">
-              <a href="https://ikodi.eu/blog/?page_id=36">Contact</a>
-            </li>
-            <li class="nav__link">
-              <a href="./accueil/CV-DevWeb-Julien-PELLIN.pdf">Mon CV</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
+      <section class="hero">
+        <img src="./accueil/imgs/logo_ikodi_lettres.png" alt="logo ikodi" />
+        <h1>Portfolio</h1>
+      </section>
 
-    <section class="hero">
-      <img src="./accueil/imgs/logo_ikodi_lettres.png" alt="logo ikodi" />
-      <h1>Portfolio</h1>
-    </section>
+      <section class="portefolio">
+        <!------------------------------------------------------->
+        <div class="portefolio__card">
+          <div class="portefolio__card__img">
+            <a href="https://portfolio.ikodi.eu">
+              <img
+                src="./accueil/imgs/portfolio_portfolio.png"
+                alt="hero du portfolio réalisé avec Next.js"
+                class="portefolio__card__img"
+              />
+            </a>
+          </div>
 
-    <section class="portefolio">
-      <!-- ---------- -->
-      <div class="portefolio__card">
-        <div class="portefolio__card__img">
-          <a href="https://chronofit.ikodi.eu">
-            <iframe src="https://www.youtube.com/embed/mnzY1pf2LO0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </a>
-        </div>
+          <div class="portefolio__card__infos">
+            <h2>Portfolio </br>*en développement*</h2>
 
-        <div class="portefolio__card__infos">
-          <h2>Chronofit</h2>
-
-          <p>
-            Une app pour l'enchainement d'exercices chronométrés.
-            Tels que les WOD de CrossFit, les HIITS, Tabatha et autres circuit training.
-            <br>
-            Chronofit permet de créer un entrainement personnalisé ou de "lire" des entrainements déjà existant.
-            <br>
-            En plus, des fonctionnalités intéressantes avec les WOD "Girls", du drag & drop, de la synthèse vocale...
-          </p>
             <p>
-              Front: React-Redux, scss<br>
-            Back: express<br>
-            Deploy: AWS EC2.
-          </p>
-              <button class="button">
-            <a href="https://chronofit.ikodi.eu">Chronofit</a>
-          </button>
-              <button class="button --repo">
-            <a href="https://github.com/Ikodi-julien?tab=repositories">Repo Github</a>
-          </button>
+              Mon futur portfolio, developpé comme une application avec Next.js
+            </p>
+
+            <p>
+              Front: React, scss<br />
+              Back: Next.js<br />
+              Deploy: AWS EC2.
+            </p>
+            <button class="button">
+              <a href="https://portfolio.ikodi.eu">Portfolio - Next.js</a>
+            </button>
+            <button class="button --repo">
+              <a href="https://github.com/Ikodi-julien/portfolio"
+                >Repo Github</a
+              >
+            </button>
+          </div>
         </div>
-      </div>
-      <!-- ---------- -->
-      <div class="portefolio__card">
-        <div class="portefolio__card__img">
-          <a href="https://ikodi.eu/blog">
+        <!-- ---------- -->
+        <div class="portefolio__card">
+          <div class="portefolio__card__img">
+            <a href="https://chronofit.ikodi.eu">
+              <iframe
+                src="https://www.youtube.com/embed/mnzY1pf2LO0"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </a>
+          </div>
+
+          <div class="portefolio__card__infos">
+            <h2>Chronofit</h2>
+
+            <p>
+              Une app pour l'enchainement d'exercices chronométrés. Tels que les
+              WOD de CrossFit, les HIITS, Tabatha et autres circuit training.
+              <br />
+              Chronofit permet de créer un entrainement personnalisé ou de
+              "lire" des entrainements déjà existant.
+              <br />
+              En plus, des fonctionnalités intéressantes avec les WOD "Girls",
+              du drag & drop, de la synthèse vocale...
+            </p>
+            <p>
+              Front: React-Redux, scss<br />
+              Back: express<br />
+              Deploy: AWS EC2.
+            </p>
+            <button class="button">
+              <a href="https://chronofit.ikodi.eu">Chronofit</a>
+            </button>
+            <button class="button --repo">
+              <a href="https://github.com/Ikodi-julien?tab=repositories"
+                >Repo Github</a
+              >
+            </button>
+          </div>
+        </div>
+        <!-- ---------- -->
+        <div class="portefolio__card">
+          <div class="portefolio__card__img">
+            <a href="https://ikodi.eu/blog">
               <img
                 src="./accueil/imgs/blog_20210104.png"
                 alt="image du blog"
                 class="portefolio__card__img"
               />
             </a>
-        </div>
+          </div>
 
-        <div class="portefolio__card__infos">
-          <h2>Le Blog</h2>
-          <p>
-            Depuis août 2020, un blog réalisé avec Wordpress. Environ un billet par semaine, sur des sujets en
-            lien avec mon apprentissage du métier de développeur web.
-          </p>
-          <button class="button"><a href="https://ikodi.eu/blog">Aller voir</a></button>
-        </div>
-      </div>
-      <!-- ---------- -->
-      <div class="portefolio__card">
-        <div class="portefolio__card__img">
-          <a href="https://concord.ikodi.eu">
-            <img
-              src="./accueil/imgs/concord-portefolio.png"
-              alt="image de concord"
-              class="portefolio__card__img"
-            />
-          </a>
-        </div>
-
-        <div class="portefolio__card__infos">
-          <h2>Concord</h2>
-
-          <p>
-            Une application de livechat autour des séries d'animation. Front React + Redux, Back-end Express, connexion
-            avec son
-            compte Google, JWT, cookies httponly et bien sûr des websockets dedans.
-          </p>
-          <button class="button">
-            <a href="https://concord.ikodi.eu">Concord</a>
-          </button>
-          <button class="button --repo">
-            <a href="https://github.com/Ikodi-julien?tab=repositories">Repo Github</a>
-          </button>
-        </div>
-      </div>
-      <!-- ---------- -->
-      <div class="portefolio__card">
-        <div class="portefolio__card__img">
-          <a href="https://topics.ikodi.eu">
-            <img
-              src="./accueil/imgs/topics.png"
-              alt="page d'accueil de topics"
-              class="portefolio__card__img"
-            />
-          </a>
-        </div>
-
-        <div class="portefolio__card__infos">
-          <h2>Topics</h2>
-          <p>
-            Développé en marge de la formation dev fullstack JS, une app de type forum, backend Strapi + BDD PostgreSQL
-            chez AWS. <br>Avec l'aide de Alice et Camille pour le design.
-          </p>
+          <div class="portefolio__card__infos">
+            <h2>Le Blog</h2>
+            <p>
+              Depuis août 2020, un blog réalisé avec Wordpress. Environ un
+              billet par semaine, sur des sujets en lien avec mon apprentissage
+              du métier de développeur web.
+            </p>
             <button class="button">
-            <a href="https://topics.ikodi.eu">Topics</a>
-          </button>
-            <button class="button --repo">
-            <a href="https://github.com/Ikodi-julien/topics-AWS">Repo Github</a>
-          </button>
+              <a href="https://ikodi.eu/blog">Aller voir</a>
+            </button>
+          </div>
         </div>
-      </div>
-      <!-- ---------- -->
-      <div class="portefolio__card">
-        <div class="portefolio__card__img">
-          <a href="https://ikodi.eu/multiplicorne">
-            <img
-              src="./accueil/imgs/multiplicorne-desktop.png"
-              alt="image de multiplicorne"
-              class="portefolio__card__img"
-            />
-          </a>
-        </div>
+        <!-- ---------- -->
+        <div class="portefolio__card">
+          <div class="portefolio__card__img">
+            <a href="https://concord.ikodi.eu">
+              <img
+                src="./accueil/imgs/concord-portefolio.png"
+                alt="image de concord"
+                class="portefolio__card__img"
+              />
+            </a>
+          </div>
 
-        <div class="portefolio__card__infos">
-          <h2>Multiplicorne</h2>
-          <p>
-            Ma fille en cm2 avait pas mal de difficultés avec l’apprentissage
-            des tables de multiplications, par contre les licornes sont ses
-            meilleures amies, donc... <br>Backend PHP sans framework.
-          </p>
+          <div class="portefolio__card__infos">
+            <h2>Concord</h2>
+
+            <p>
+              Une application de livechat autour des séries d'animation. Front
+              React + Redux, Back-end Express, connexion avec son compte Google,
+              JWT, cookies httponly et bien sûr des websockets dedans.
+            </p>
             <button class="button">
-            <a href="https://ikodi.eu/multiplicorne">Multiplicorne</a>
-          </button>
+              <a href="https://concord.ikodi.eu">Concord</a>
+            </button>
             <button class="button --repo">
-            <a href="https://github.com/Ikodi-julien/multiplicorne">Repo Github</a>
-          </button>
+              <a href="https://github.com/Ikodi-julien?tab=repositories"
+                >Repo Github</a
+              >
+            </button>
+          </div>
         </div>
-      </div>
-      <!-- ---------- -->
-      <div class="portefolio__card">
-        <div class="portefolio__card__img">
-          <a href="https://ikodi.eu/chronoFit">
-            <img
-              src="./accueil/imgs/chronofit-portefolio.png"
-              alt="image de chronoFit"
-              class="portefolio__card__img"
-            />
-          </a>
-        </div>
+        <!-- ---------- -->
+        <div class="portefolio__card">
+          <div class="portefolio__card__img">
+            <a href="https://topics.ikodi.eu">
+              <img
+                src="./accueil/imgs/topics.png"
+                alt="page d'accueil de topics"
+                class="portefolio__card__img"
+              />
+            </a>
+          </div>
 
-        <div class="portefolio__card__infos">
-          <p>
-            La vieille version de chronofit, si jeune et déjà dépassée...
-          </p>
-          <p>
-            Front: html, scss,<br>
-            Back: PHP, POO sans framework.<br>
-            Deploy: Instance PHP chez Gandi.
-          </p>
+          <div class="portefolio__card__infos">
+            <h2>Topics</h2>
+            <p>
+              Développé en marge de la formation dev fullstack JS, une app de
+              type forum, backend Strapi + BDD PostgreSQL chez AWS. <br />Avec
+              l'aide de Alice et Camille pour le design.
+            </p>
             <button class="button">
-            <a href="https://ikodi.eu/chronoFit">ChronoFit</a>
-          </button>
+              <a href="https://topics.ikodi.eu">Topics</a>
+            </button>
             <button class="button --repo">
-            <a href="https://github.com/Ikodi-julien/chronoFit">Repo Github</a>
-          </button>
+              <a href="https://github.com/Ikodi-julien/topics-AWS"
+                >Repo Github</a
+              >
+            </button>
+          </div>
         </div>
-      </div>
-      <!-- ---------- -->
+        <!-- ---------- -->
+        <div class="portefolio__card">
+          <div class="portefolio__card__img">
+            <a href="https://ikodi.eu/multiplicorne">
+              <img
+                src="./accueil/imgs/multiplicorne-desktop.png"
+                alt="image de multiplicorne"
+                class="portefolio__card__img"
+              />
+            </a>
+          </div>
 
-      <div class="portefolio__card">
-        <div class="portefolio__card__img">
-          <a href="https://ikodi.eu/games">
+          <div class="portefolio__card__infos">
+            <h2>Multiplicorne</h2>
+            <p>
+              Ma fille en cm2 avait pas mal de difficultés avec l’apprentissage
+              des tables de multiplications, par contre les licornes sont ses
+              meilleures amies, donc... <br />Backend PHP sans framework.
+            </p>
+            <button class="button">
+              <a href="https://ikodi.eu/multiplicorne">Multiplicorne</a>
+            </button>
+            <button class="button --repo">
+              <a href="https://github.com/Ikodi-julien/multiplicorne"
+                >Repo Github</a
+              >
+            </button>
+          </div>
+        </div>
+        <!-- ---------- -->
+        <div class="portefolio__card">
+          <div class="portefolio__card__img">
+            <a href="https://ikodi.eu/chronoFit">
+              <img
+                src="./accueil/imgs/chronofit-portefolio.png"
+                alt="image de chronoFit"
+                class="portefolio__card__img"
+              />
+            </a>
+          </div>
+
+          <div class="portefolio__card__infos">
+            <p>La vieille version de chronofit, si jeune et déjà dépassée...</p>
+            <p>
+              Front: html, scss,<br />
+              Back: PHP, POO sans framework.<br />
+              Deploy: Instance PHP chez Gandi.
+            </p>
+            <button class="button">
+              <a href="https://ikodi.eu/chronoFit">ChronoFit</a>
+            </button>
+            <button class="button --repo">
+              <a href="https://github.com/Ikodi-julien/chronoFit"
+                >Repo Github</a
+              >
+            </button>
+          </div>
+        </div>
+        <!-- ---------- -->
+
+        <div class="portefolio__card">
+          <div class="portefolio__card__img">
+            <a href="https://ikodi.eu/games">
               <img
                 src="./accueil/imgs/games_medley.png"
                 alt="image de jeux"
                 class="portefolio__card__img"
               />
             </a>
-        </div>
-        <div class="portefolio__card__infos">
-          <h2>Les Games</h2>
-          <p>
-            Jeux tout en JavaScript, scores et commentaires enregistrés en POO PHP dans une base PostegreSQL. Depuis
-            octobre 2020.
-          </p>
-          <button class="button">
-            <a href="https://ikodi.eu/games">Aller voir</a>
-          </button>
-          <button class="button --repo">
-            <a href="">Repo Github</a>
-          </button>
-        </div>
-      </div>
-
-      <!-- ---------- -->
-
-      <div class="portefolio__card">
-        <div class="portefolio__card__infos portefolio__pixelArt">
-          <h2>Pixel Art</h2>
-
-          <p> Faites votre "invader" </p>
-
-          <form class="portefolio__pixelArt__form" id="pixelArtForm"></form>
-
-          <div class="portefolio__pixelArt__display" id="pixelArtSection">
-            <div class="portefolio__pixelArt__display__caneva" id="pixelArtDisplay"></div>
+          </div>
+          <div class="portefolio__card__infos">
+            <h2>Les Games</h2>
+            <p>
+              Jeux tout en JavaScript, scores et commentaires enregistrés en POO
+              PHP dans une base PostegreSQL. Depuis octobre 2020.
+            </p>
+            <button class="button">
+              <a href="https://ikodi.eu/games">Aller voir</a>
+            </button>
+            <button class="button --repo">
+              <a href="">Repo Github</a>
+            </button>
           </div>
         </div>
-      </div>
-    </section>
 
-    <footer>
-      <div class="content">
-        <div class="logo">
-          <a href="./index.html">
+        <!-- ---------- -->
+
+        <div class="portefolio__card">
+          <div class="portefolio__card__infos portefolio__pixelArt">
+            <h2>Pixel Art</h2>
+
+            <p>Faites votre "invader"</p>
+
+            <form class="portefolio__pixelArt__form" id="pixelArtForm"></form>
+
+            <div class="portefolio__pixelArt__display" id="pixelArtSection">
+              <div
+                class="portefolio__pixelArt__display__caneva"
+                id="pixelArtDisplay"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="content">
+          <div class="logo">
+            <a href="./index.html">
               <img
                 src="./accueil/imgs/logo_ikodi_lettres.png"
                 alt="logo du site ikodi"
             /></a>
-          <p>- 08/2021 -</p>
-        </div>
+            <p>- 08/2021 -</p>
+          </div>
 
-        <div class="links-row">
-          <div class="socialLinks">
-            <!-- github -->
-            <a href="https://github.com/Ikodi-julien">
+          <div class="links-row">
+            <div class="socialLinks">
+              <!-- github -->
+              <a href="https://github.com/Ikodi-julien">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -362,8 +420,8 @@
                 </svg>
               </a>
 
-            <!-- linkedin -->
-            <a
+              <!-- linkedin -->
+              <a
                 href="https://www.linkedin.com/in/julien-pellin-934720188/?originalSubdomain=fr"
               >
                 <svg
@@ -379,8 +437,8 @@
                 </svg>
               </a>
 
-            <!-- facebook -->
-            <a href="https://fr-fr.facebook.com/julien.pellin.52">
+              <!-- facebook -->
+              <a href="https://fr-fr.facebook.com/julien.pellin.52">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -393,16 +451,15 @@
                   ></path>
                 </svg>
               </a>
-          </div>
+            </div>
 
-          <div class="usefullLinks">
-            <div class="sep"></div>
-            <a href="https://ikodi.eu/blog/?page_id=36">Contact</a>
+            <div class="usefullLinks">
+              <div class="sep"></div>
+              <a href="https://ikodi.eu/blog/?page_id=36">Contact</a>
+            </div>
           </div>
         </div>
-      </div>
-    </footer>
-  </div>
-</body>
-
+      </footer>
+    </div>
+  </body>
 </html>

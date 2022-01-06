@@ -266,9 +266,9 @@
 :root {
   --gold: #fede00;
   --mint: #b4f8c8;
-  --turquoise: #EEEDE7;
-  --baby-blue: #EEEDE7;
-  --baby-blue-transparent: #EEEDE7;
+  --turquoise: #eeede7;
+  --baby-blue: #eeede7;
+  --baby-blue-transparent: #eeede7;
   --color-font-dark: rgba(40, 40, 40, 0.7);
   --color-font-light: rgb(243, 243, 243);
   --color-back-footer: rgba(37, 68, 90, 0.8);
@@ -295,7 +295,7 @@ body {
 }
 
 .container {
-  background-color: #EEEDE7;
+  background-color: #eeede7;
 }
 
 li {
@@ -353,7 +353,8 @@ a {
   background-color: var(--turquoise);
   opacity: 97%;
   border-radius: 0 0 0 30px;
-  box-shadow: inset 6px 6px 10px 0 rgba(40, 40, 40, 0.3), inset -6px -6px 10px 0 rgba(255, 255, 255, 0.3);
+  box-shadow: inset 6px 6px 10px 0 rgba(40, 40, 40, 0.3),
+    inset -6px -6px 10px 0 rgba(255, 255, 255, 0.3);
 }
 @media screen and (max-width: 450px) {
   .nav__menu {
@@ -370,20 +371,32 @@ a {
   margin: 30px;
   text-decoration: none;
   border-radius: 10px;
-  box-shadow: 6px 6px 10px 0 rgba(40, 40, 40, 0.3), -6px -6px 10px 0 rgba(255, 255, 255, 0.3);
+  box-shadow: 6px 6px 10px 0 rgba(40, 40, 40, 0.3),
+    -6px -6px 10px 0 rgba(255, 255, 255, 0.3);
 }
 @media screen and (max-width: 450px) {
   .nav__menu ul > li > a {
     margin: 20px;
-    box-shadow: 5px 5px 8px 0 rgba(40, 40, 40, 0.3), -5px -5px 8px 0 rgba(255, 255, 255, 0.3);
+    box-shadow: 5px 5px 8px 0 rgba(40, 40, 40, 0.3),
+      -5px -5px 8px 0 rgba(255, 255, 255, 0.3);
   }
 }
 .nav__menu ul > li a:hover {
-  background: linear-gradient(170deg, rgba(255, 255, 255, 0.1), var(--turquoise), rgba(40, 40, 40, 0.1));
+  background: linear-gradient(
+    170deg,
+    rgba(255, 255, 255, 0.1),
+    var(--turquoise),
+    rgba(40, 40, 40, 0.1)
+  );
   font-weight: bold;
 }
 .nav__menu ul > li a:active {
-  background: linear-gradient(10deg, rgba(255, 255, 255, 0.1), var(--turquoise), rgba(40, 40, 40, 0.1));
+  background: linear-gradient(
+    10deg,
+    rgba(255, 255, 255, 0.1),
+    var(--turquoise),
+    rgba(40, 40, 40, 0.1)
+  );
 }
 .nav__menu__show {
   right: 0;
@@ -401,7 +414,8 @@ a {
   cursor: pointer;
   z-index: 11 !important;
   border-radius: 10px;
-  box-shadow: 6px 6px 10px 0 rgba(40, 40, 40, 0.3), -6px -6px 10px 0 rgba(255, 255, 255, 0.3);
+  box-shadow: 6px 6px 10px 0 rgba(40, 40, 40, 0.3),
+    -6px -6px 10px 0 rgba(255, 255, 255, 0.3);
   background-color: var(--turquoise);
 }
 .nav__hamburger__slice {
@@ -411,7 +425,8 @@ a {
   border-radius: 2px;
   transition: all 350ms;
 }
-.nav__hamburger__slice::before, .nav__hamburger__slice::after {
+.nav__hamburger__slice::before,
+.nav__hamburger__slice::after {
   content: "";
   position: absolute;
   height: 4px;
@@ -476,19 +491,22 @@ a {
   margin: 5vw;
   padding: 2vw;
   border-radius: 2vw;
-  box-shadow: 20px 20px 50px 0 rgba(40, 40, 40, 0.6), -20px -20px 50px 0 rgba(255, 255, 255, 0.5);
+  box-shadow: 20px 20px 50px 0 rgba(40, 40, 40, 0.6),
+    -20px -20px 50px 0 rgba(255, 255, 255, 0.5);
   display: flex;
   align-items: center;
 }
 @media screen and (max-width: 800px) {
   .portefolio__card {
     width: 85vw;
-    box-shadow: 15px 15px 25px 0 rgba(40, 40, 40, 0.6), -15px -15px 25px 0 rgba(255, 255, 255, 0.5);
+    box-shadow: 15px 15px 25px 0 rgba(40, 40, 40, 0.6),
+      -15px -15px 25px 0 rgba(255, 255, 255, 0.5);
   }
 }
 @media screen and (max-width: 450px) {
   .portefolio__card {
-    box-shadow: 5px 5px 10px 0 rgba(40, 40, 40, 0.6), -5px -5px 10px 0 rgba(255, 255, 255, 0.5);
+    box-shadow: 5px 5px 10px 0 rgba(40, 40, 40, 0.6),
+      -5px -5px 10px 0 rgba(255, 255, 255, 0.5);
     flex-direction: column;
   }
 }
@@ -534,69 +552,70 @@ a {
 }
 .portefolio__card__infos h2 {
   align-self: center;
-  font-size: 3vw;
+  font-size: 2.5rem;
   margin: 2vw;
 }
 @media screen and (max-width: 800px) {
   .portefolio__card__infos h2 {
-    font-size: 4vw;
+    font-size: 2rem;
     margin: 2.5vw;
   }
 }
 @media screen and (max-width: 450px) {
   .portefolio__card__infos h2 {
-    font-size: 8vw;
+    font-size: 1.5rem;
     margin: 3vw;
   }
 }
 .portefolio__card__infos p {
-  font-size: 1.8vw;
+  font-size: 2rem;
   margin: 1.5vw;
 }
 @media screen and (max-width: 800px) {
   .portefolio__card__infos p {
-    font-size: 2.2vw;
+    font-size: 1.5rem;
     margin: 2.5vw;
   }
 }
 @media screen and (max-width: 450px) {
   .portefolio__card__infos p {
-    font-size: 6vw;
+    font-size: 1rem;
     margin: 3vw;
   }
 }
 .portefolio__card__infos p em {
-  font-size: 1.5vw;
+  font-size: 2rem;
 }
 @media screen and (max-width: 800px) {
   .portefolio__card__infos p em {
-    font-size: 1.8vw;
+    font-size: 1.5rem;
   }
 }
 @media screen and (max-width: 450px) {
   .portefolio__card__infos p em {
-    font-size: 3vw;
+    font-size: 1rem;
   }
 }
 .portefolio__card__infos .button {
   display: flex;
   margin: 20px;
   background-color: var(--gold);
-  font-size: 1.8vw;
+  font-size: 2rem;
   border: 1px solid rgba(40, 40, 40, 0.2);
   border-radius: 3vw;
   align-self: center;
-  box-shadow: inset -10px -10px 20px rgba(40, 40, 40, 0.2), inset 10px 10px 20px rgba(255, 255, 255, 0.4);
+  box-shadow: inset -10px -10px 20px rgba(40, 40, 40, 0.2),
+    inset 10px 10px 20px rgba(255, 255, 255, 0.4);
   cursor: pointer;
 }
 @media screen and (max-width: 800px) {
   .portefolio__card__infos .button {
-    font-size: 2.2vw;
+    font-size: 1.5rem;
   }
 }
 @media screen and (max-width: 450px) {
   .portefolio__card__infos .button {
-    font-size: 6vw;
+    font-size: 1rem;
   }
 }
 .portefolio__card__infos .button a {
@@ -621,7 +640,8 @@ a {
   color: var(--color-font-light);
 }
 .portefolio__card__infos .button:hover {
-  box-shadow: inset 10px 10px 20px rgba(40, 40, 40, 0.2), inset -10px -10px 20px rgba(255, 255, 255, 0.4);
+  box-shadow: inset 10px 10px 20px rgba(40, 40, 40, 0.2),
+    inset -10px -10px 20px rgba(255, 255, 255, 0.4);
   font-weight: bold;
 }
 .portefolio #quillers {
